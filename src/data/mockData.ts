@@ -1,0 +1,121 @@
+import { Post, Category, CategoryInfo } from '../types';
+
+export const mockPosts: Post[] = [
+  {
+    id: '1',
+    content: 'I wish I could restart life',
+    timestamp: new Date('2025-05-15T14:22:00').getTime(),
+    reactions: {
+      hearts: 14,
+      flames: 8,
+      frowns: 5,
+    },
+    category: 'trauma',
+    userReactions: {},
+    replies: [],
+  },
+  {
+    id: '2',
+    content: 'I miss the old me',
+    timestamp: new Date('2025-05-15T13:45:00').getTime(),
+    reactions: {
+      hearts: 22,
+      flames: 10,
+      frowns: 9,
+    },
+    category: 'trauma',
+    userReactions: {},
+    replies: [],
+  },
+  {
+    id: '3',
+    content: 'I laughed today, finally',
+    timestamp: new Date('2025-05-15T12:30:00').getTime(),
+    reactions: {
+      hearts: 30,
+      flames: 5,
+      frowns: 1,
+    },
+    category: 'healing',
+    userReactions: {},
+    replies: [],
+  },
+  {
+    id: '4',
+    content: 'Failed my exam today. Feeling like a complete failure. Not sure how to tell my parents, they have such high expectations for me.',
+    timestamp: new Date('2025-05-15T11:20:00').getTime(),
+    reactions: {
+      hearts: 18,
+      flames: 7,
+      frowns: 2,
+    },
+    category: 'pressure',
+    userReactions: {},
+    replies: [],
+  },
+  {
+    id: '5',
+    content: 'My partner just told me they need space. After 3 years together, I don\'t know what to do with myself now.',
+    timestamp: new Date('2025-05-15T10:15:00').getTime(),
+    reactions: {
+      hearts: 25,
+      flames: 12,
+      frowns: 7,
+    },
+    category: 'heartbreak',
+    userReactions: {},
+    replies: [],
+  },
+  {
+    id: '6',
+    content: 'Got promoted today! All those late nights finally paid off!',
+    timestamp: new Date('2025-05-15T09:30:00').getTime(),
+    reactions: {
+      hearts: 45,
+      flames: 20,
+      frowns: 0,
+    },
+    category: 'success',
+    userReactions: {},
+    replies: [],
+  },
+  {
+    id: '7',
+    content: 'My anxiety is through the roof today. Every phone notification makes me jump.',
+    timestamp: new Date('2025-05-15T08:45:00').getTime(),
+    reactions: {
+      hearts: 16,
+      flames: 9,
+      frowns: 4,
+    },
+    category: 'anxiety',
+    userReactions: {},
+    replies: [],
+  },
+  {
+    id: '8',
+    content: 'Had a big argument with my mom again. Why can\'t she understand that I need to live my own life?',
+    timestamp: new Date('2025-05-15T07:30:00').getTime(),
+    reactions: {
+      hearts: 12,
+      flames: 15,
+      frowns: 3,
+    },
+    category: 'family',
+    userReactions: {},
+    replies: [],
+  },
+];
+
+export const categories: CategoryInfo[] = [
+  { id: 'trauma', name: 'Trauma', icon: 'alert-triangle', description: 'Share your experiences and find support' },
+  { id: 'secrets', name: 'Secrets', icon: 'lock', description: 'Confess what you\'ve been holding inside' },
+  { id: 'confession', name: 'Confession', icon: 'message-square', description: 'Share your deepest thoughts' },
+  { id: 'body-count', name: 'Body Count', icon: 'users', description: 'Discuss relationships and experiences' },
+  { id: 'heartbreak', name: 'Heartbreak', icon: 'heart-crack', description: 'Share your emotional journey' },
+  { id: 'healing', name: 'Healing', icon: 'sun', description: 'Stories of recovery and growth' },
+  { id: 'pressure', name: 'Pressure', icon: 'compass', description: 'Dealing with life\'s expectations' },
+  { id: 'anxiety', name: 'Anxiety', icon: 'alert-circle', description: 'Share your struggles and coping mechanisms' },
+  { id: 'family', name: 'Family', icon: 'home', description: 'Family dynamics and relationships' },
+  { id: 'success', name: 'Success', icon: 'trophy', description: 'Celebrate your achievements' },
+];
